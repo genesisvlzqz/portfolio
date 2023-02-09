@@ -1,11 +1,6 @@
 import './index.scss';
  
 const AnimatedLetters = ({ letterClass, strArray, idx }) => {
-    const renderBreak = (index) => {
-        if(index===11){
-            return <br className='display-mobile' />
-        } 
-    }
 
     return (
 
