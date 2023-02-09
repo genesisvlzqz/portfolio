@@ -86,15 +86,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className='info-map'>
-            Dallas,
-            <br />
-            Texas,
-            <br />
-            USA
-            <br />
-            <span>genesisvlzqz@gmail.com</span>
-        </div>
+
         <div className='map-wrap'>
             <MapContainer center={[32.79348, -96.74770]} zoom={13}>
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
@@ -103,6 +95,15 @@ const Contact = () => {
 
                 </Marker>
             </MapContainer>
+            <div className='info-map'>
+              Dallas,
+              <br />
+              Texas,
+              <br />
+              USA
+              <br />
+            <span>genesisvlzqz@gmail.com</span>
+        </div>
         </div>
       </div>
       <div>

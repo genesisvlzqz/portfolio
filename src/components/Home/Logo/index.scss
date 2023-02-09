@@ -35,18 +35,25 @@
       transform: rotateZ(30deg) !important;
       z-index: 1;
     }
-  }
+}
   
-  .svg-container {
-    stroke: #ffd700;
-    stroke-width: 10;
+.svg-container {
+  stroke: #ffd700;
+  stroke-width: 10;
+}
+
+@media(max-width: 400px) {
+  .logo-container{
+    svg {
+      left: 40%;
+      top: 35%;
+    }
+    .solid-logo {
+      left: 55%;
+      top: 49%;
+    }
   }
 
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  @keyframes fadeOun {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
-  }
+}
+@media(min-width: 401px) {
+}
