@@ -1,0 +1,15 @@
+.vortex-wrapper {
+  display: block;
+  position: absolute;
+  
+  right: 50%;
+  margin: auto;
+  
+  bottom: 50%;
+  animation: fadeOut .5s .5s;
+  animation-fill-mode: forwards;
+  svg {
+    width: 150px;
+    height: 150px;
+  }
+}
