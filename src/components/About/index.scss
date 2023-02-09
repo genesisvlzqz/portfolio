@@ -77,3 +77,15 @@
 
     }
 }
+
+@media (max-width:750px) {
+
+    .stage-cube-cont {
+        top: -10%;
+        padding-top: 0;
+        right: -5%;
+    }
+    .cubespinner {
+        scale: .25;
+    }
+}

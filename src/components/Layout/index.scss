@@ -38,20 +38,31 @@
     transform-style: preserve-3d;
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;
     
 }
 
 .about-page,
 .contact-page {
     .text-zone {
+        width: 50%;
+        will-change: contents;
+        padding-top: 2%;
+        margin-bottom: 2%;
+        height: 90%;
+        min-height: 566px;
         position: absolute;
+        opacity: 0;
+        top: 5%;
+        margin: 0 auto;
+        z-index: 1;
+        transform-style: preserve-3d;
+        animation: fadeIn 1s forwards;
+        animation-delay: 1s;
         left: 5%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 35%;
-        vertical-align: middle;
-        display: table-cell;
-        max-height: 90%;
+        overflow-y: scroll;
+
 
         h1 {
             font-size: 53px;
@@ -115,3 +126,48 @@
         }
     }
 }
+@media(max-width:750px) {
+    .container{
+        width: 100%;
+        will-change: contents;
+        height: 90%;
+        min-height: 566px;
+        position: absolute;
+        opacity: 0;
+        top: 5%;
+        margin: 0 auto;
+        z-index: 1;
+        transform-style: preserve-3d;
+        animation: fadeIn 1s forwards;
+        animation-delay: 1s;
+        left: 5%;
+        .text-zone {
+            position: absolute;
+            left: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 35%;
+            vertical-align: middle;
+            display: table-cell;
+            max-height: 90%;
+            min-width: 305px;
+            }
+
+        
+    }
+}
+::-webkit-scrollbar {
+    width: 1em;
+    display: none;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.0);
+  outline: 1px solid slategrey;
+  border-radius: 3px;
+}
+
