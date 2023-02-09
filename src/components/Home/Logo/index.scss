@@ -2,14 +2,17 @@
     z-index: 0;
     width: 400px;
     height: 609px;
-    opacity: 0;
     position: absolute;
     top: 0;
     right: 15%;
     bottom: 0;
     left: auto;
     margin: auto;
-  
+
+    img {
+      animation: fadeIn 3s 2.5s backwards;
+    }
+
     svg {
       width: 100%;
       height: auto;
@@ -18,17 +21,17 @@
       position: absolute;
       left: 30%;
       top: -14.2%;
+      animation: fadeOut 3s 2.5s forwards;
     }
   
     .solid-logo {
       position: absolute;
-      top: auto;
+      top: 9.5%;
       right: auto;
       bottom: auto;
-      left: 45%;
+      left: 31.5%;
       margin: auto;
-      width: 54%;
-      opacity: 0;
+      width: 78%;
       transform: rotateZ(30deg) !important;
       z-index: 1;
     }
@@ -37,4 +40,13 @@
   .svg-container {
     stroke: #ffd700;
     stroke-width: 10;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes fadeOun {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
   }
