@@ -39,22 +39,18 @@ const Sidebar = () => (
         <a 
             target="_blank" 
             rel="noreferrer" 
-            href=""
+            href="https://www.linkedin.com/in/gvelazquezreyes/"
         >
            <Linkedin fill='#4d4d4e' transform='scale(.5)'/>
-            
         </a>
       </li>
       <li>
         <a 
             target="_blank" 
             rel="noreferrer" 
-            href="https://www.linkedin.com/in/gvelazquezreyes/"
+            href="https://github.com/genesisvlzqz"
         >
             <Github fill='#4d4d4e' transform='scale(.5)' />
-
-
-          {/* <FontAwesomeIcon icon="fa-brands fa-github" color="#4d4d4e" /> */}
         </a>
       </li>
     </ul>

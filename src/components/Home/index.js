@@ -4,7 +4,8 @@ import './index.scss';
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import Logo from './Logo';
-import { Loader } from 'react-loaders';
+//import { Loader } from 'react-loaders';
+import Loader from '../Loader'
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -42,7 +43,9 @@ const Home = () => {
             </div>
             
         </div>
-        <Loader type="pacman" />
+        <div>
+            <Loader />
+        </div>
         </>
     );
 }

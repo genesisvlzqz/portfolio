@@ -3,7 +3,8 @@ import AnimatedLetters from '../AnimatedLetters'
 import { useState, useEffect } from 'react'
 import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Loader } from 'react-loaders';
+import Loader from '../Loader'
+
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
@@ -77,7 +78,9 @@ const About = () => {
         </div>
       </div>
     </div>
-    <Loader type="pacman" />
+    <div>
+      <Loader />
+    </div>
     </>
   )
 }

@@ -1,5 +1,5 @@
 .nav-bar {
-    background: #181818;
+    background: #171738;
     width:60px;
     height:100%;
     position: absolute;
@@ -33,12 +33,16 @@
         width: 100%;
         a{
             font-size: 22px;
-            color: #4d4d4e;
+            color: #1E91D6;
             display: block;
             line-height: 51px;
             height: 51px;
             position: relative;
             text-decoration: none;
+
+            svg {
+                color: #1E91D6;
+            }
 
             i {
                 transition: all 0.3s ease-out;
@@ -114,6 +118,10 @@
 
                 &:hover {
                     color: #ffd700;
+                }
+                
+                svg {
+                    fill: #1E91D6;
                 }
             }
         }
