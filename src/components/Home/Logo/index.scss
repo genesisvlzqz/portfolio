@@ -42,7 +42,7 @@
   stroke-width: 10;
 }
 
-@media(max-width: 400px) {
+@media(max-width: 812px) {
   .logo-container{
     svg {
       left: 40%;
@@ -54,6 +54,4 @@
     }
   }
 
-}
-@media(min-width: 401px) {
 }
